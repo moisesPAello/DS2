@@ -1,0 +1,11 @@
+@startuml Ejercio 3
+
+class Password
+{
+    - longitud:     int
+    - contenido:    string
+
+    - esSegura():   bool
+}
+
+@enduml

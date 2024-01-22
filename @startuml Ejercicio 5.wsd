@@ -1,0 +1,35 @@
+@startuml Ejercicio 5
+
+class Tablero
+{
+    - casillas:     Casilla[3,3]
+    - turno:        bool
+    - hayGanador:   bool
+
+    + seleccionarCasilla (renglon: int, columna: int): void
+    + validarGanador (): void
+    + getTurno (): bool
+    + getHayGanador (): bool
+    + print (): string
+}
+
+enum EstadoCasilla
+{
+    Vacio
+    X
+    O
+}
+
+class Casilla
+{
+    - estado: EstadoCasilla
+
+    + setEstado(estado: EstadoCasilla): void
+    + getEstado(): EstadoCasilla
+}
+
+
+Casilla --  EstadoCasilla
+Tablero *-l- Casilla
+
+@enduml

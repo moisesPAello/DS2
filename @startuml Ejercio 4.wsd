@@ -1,0 +1,11 @@
+@startuml Ejercio 4
+
+class Ciculo
+{
+    + radio:        float
+    
+    + area():       float
+    + perimetro():  float
+}
+
+@enduml

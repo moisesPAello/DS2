@@ -1,0 +1,11 @@
+@startuml Ejercicio 2
+
+class Documento
+{
+    + Titulo:     string
+    + Autor:      string
+    + Fecha:      string
+    + Contenido:  string
+    + Firma:      string
+}
+@enduml

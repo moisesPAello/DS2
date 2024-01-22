@@ -1,0 +1,14 @@
+@startuml Ejercicio 1
+
+class Libro
+{
+    + Nombre:   string
+    + Autor:    string
+    + Editorial:string 
+    + Fecha:    int
+    + Paginas:  int
+
+}    
+
+
+@enduml
